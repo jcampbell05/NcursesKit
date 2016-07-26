@@ -22,7 +22,6 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/NcursesKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'James Campbell' => 'james@supmenow.com' }
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/NcursesKit.git', :tag => s.version.to_s }
@@ -31,12 +30,7 @@ TODO: Add long description of the pod here.
   s.osx.deployment_target = '10.11'
 
   s.source_files = 'NcursesKit/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'NcursesKit' => ['NcursesKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_library = 'Vendors/ncurses.5.4.dylib'
+  s.preserve_paths = 'Vendors/ncurses.5.4.dylib'
+  s.libraries = 'ncurses.5.4'
 end
