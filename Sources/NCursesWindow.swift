@@ -7,46 +7,46 @@
 //
 
 import Foundation
-import Darwin.ncurses
 
 public class NCursesWindow: NCursesView {
-    
+
+    // - Cross Platform Timer
     private lazy var keyPressTimer: NSTimer = {
         return NSTimer(timeInterval: 0.02, target: self, selector: #selector(keyPressTimerDidFire), userInfo: nil, repeats: true)
     }()
-    
+
     override var window: NCursesWindow? {
         return self
     }
-    
+
     public init(frame: NRect) {
-        
+
         super.init()
-        
+
         self.frame = frame
-        
+
         NSRunLoop.mainRunLoop().addTimer(keyPressTimer, forMode: NSRunLoopCommonModes)
     }
-    
+
     override public func needsDisplay() {
         drawContext()
-        
+
         subviews.forEach {
             $0.drawContext()
         }
-        
+
         flushContext()
         refresh()
     }
-    
+
     public func makeKeyAndVisible() {
         needsDisplay()
     }
-    
+
     private func keyPressed() -> Bool {
-        
+
         let pressedChracterCode = getch()
-        
+
         if pressedChracterCode != ERR {
             ungetch(pressedChracterCode)
             return true
@@ -54,17 +54,17 @@ public class NCursesWindow: NCursesView {
             return false
         }
     }
-    
+
     @objc private func keyPressTimerDidFire() {
-        
+
         guard keyPressed() else {
             return
         }
-        
+
         let pressedCharacterCode = UInt32(getch())
         let characterScalar = UnicodeScalar(pressedCharacterCode)
         let character = Character(characterScalar)
-        
+
         didPressKeyForCharacter(character)
     }
 }
