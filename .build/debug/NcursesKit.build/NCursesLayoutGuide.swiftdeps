@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C10NcursesKit18NCursesLayoutGuide", ""]
 depends-top-level:
-- "NCursesView"
 - "NCursesLayoutAnchor"
+- "NCursesView"
 - "NCursesLayoutGuide"
 depends-member:
 - !private ["Ps9AnyObject", "NCursesLayoutAnchor"]

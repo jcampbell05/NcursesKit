@@ -7,15 +7,15 @@ provides-member:
 - ["C10NcursesKit11NCursesView", ""]
 depends-top-level:
 - !private "NPoint"
-- "NCursesView"
 - "NRect"
-- "Character"
-- "NCursesGraphicsContext"
-- !private "!="
-- "NCursesWindow"
-- "NCursesLayoutAnchor"
-- "NSObject"
 - "NCursesLayoutGuide"
+- "NCursesLayoutAnchor"
+- "NCursesView"
+- "Character"
+- "NSObject"
+- !private "!="
+- "NCursesGraphicsContext"
+- "NCursesWindow"
 depends-member:
 - !private ["Ps9AnyObject", "NCursesGraphicsContext"]
 - !private ["Ps9AnyObject", "NCursesLayoutAnchor"]

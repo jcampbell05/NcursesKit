@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias NFloat = Int32
+public typealias NFloat = Int32
 typealias NRectEdge = CGRectEdge
 
 public struct NRect {
@@ -59,38 +59,102 @@ public struct NSize {
     }
 }
 
-public func NRectContainsRect(rectA: NRect, rectB: NRect) -> Bool {
-    return CGRectContainsRect(rectA.toCGRect(), rectB.toCGRect())
+public func NRectContainsRect(_ rect1: NRect, _ rect2: NRect) -> Bool {
+    return NRectEqualToRect(rect1, NRectUnion(rect1, rect2))
 }
 
-public func NRectIntersectsRect(rectA: NRect, rectB: NRect) -> Bool {
-    return CGRectIntersectsRect(rectA.toCGRect(), rectB.toCGRect())
+public func NRectEqualToRect(_ rect1: NRect, _ rect2: NRect) -> Bool {
+  /* FIXME: It is not clear from the docs if {{0,0},{1,1}} and {{1,1},{-1,-1}}
+     are equal or not. (The text seem to imply that they aren't.) */
+  return ((rect1.origin.x == rect2.origin.x) &&
+          (rect1.origin.y == rect2.origin.y) &&
+          (rect1.size.width == rect2.size.width) &&
+          (rect1.size.height == rect2.size.height))
 }
 
-public func NRectIntersection(r1: NRect, r2: NRect) -> NRect {
+public func NRectUnion(_ rect1: NRect, _ rect2: NRect) -> NRect {
+
+  var rect = NRect.zero
+
+  /* If both of them are empty we can return r2 as an empty rect,
+     so this covers all cases: */
+  guard !NRectIsEmpty(rect1) else {
+    return rect2
+  }
+
+  guard !NRectIsEmpty(rect2) else {
+    return rect1
+  }
+
+  let rect1 = NRectStandardize(rect1)
+  let rect2 = NRectStandardize(rect2)
+
+  rect.origin.x = min(rect1.origin.x, rect2.origin.x)
+  rect.origin.y = min(rect1.origin.y, rect2.origin.y)
+  rect.size.width = max(rect1.origin.x + rect1.size.width, rect2.origin.x + rect2.size.width)
+  rect.size.height = max(rect1.origin.y + rect1.size.height, rect2.origin.y + rect2.size.height)
+
+  return rect
+}
+
+public func NRectStandardize(_ rect: NRect) -> NRect {
+
+  var rect = rect
+
+  if (rect.size.width < 0) {
+    rect.origin.x += rect.size.width;
+    rect.size.width = -rect.size.width;
+  }
+
+  if (rect.size.height < 0) {
+    rect.origin.y += rect.size.height;
+    rect.size.height = -rect.size.height;
+  }
+
+  return rect
+}
+
+public func NRectIsEmpty(_ rect: NRect) -> Bool {
+  guard !NRectIsNull(rect) else {
+    return true
+  }
+
+  return ((rect.size.width == 0) || (rect.size.height == 0))
+}
+
+public func NRectIntersectsRect(_ rect1: NRect, _ rect2: NRect) -> Bool {
+    return NRectIsNull(NRectIntersection(rect1, rect2))
+}
+
+public func NRectIsNull(_ rect: NRect) -> Bool {
+  return ((rect.origin.x == 0) || (rect.origin.y == 0) ||
+          (rect.size.width == 0) || (rect.size.height == 0))
+}
+
+public func NRectIntersection(_ rect1: NRect, _ rect2: NRect) -> NRect {
 
     var ret = NRect.zero
 
-    if(r1.origin.x < r2.origin.x)
+    if(rect1.origin.x < rect2.origin.x)
     {
-      ret.origin.x = r2.origin.x
-      ret.size.width = r1.origin.x + r1.size.width - r2.origin.x
+      ret.origin.x = rect2.origin.x
+      ret.size.width = rect1.origin.x + rect1.size.width - rect2.origin.x
     }
     else
     {
-      ret.origin.x = r1.origin.x
-      ret.size.width = r2.origin.x + r2.size.width - r1.origin.x
+      ret.origin.x = rect1.origin.x
+      ret.size.width = rect2.origin.x + rect2.size.width - rect1.origin.x
     }
 
-    if(r1.origin.y < r2.origin.y)
+    if(rect1.origin.y < rect2.origin.y)
     {
-      ret.origin.y = r2.origin.y
-      ret.size.height = r1.origin.y + r1.size.height - r2.origin.y
+      ret.origin.y = rect2.origin.y
+      ret.size.height = rect1.origin.y + rect1.size.height - rect2.origin.y
     }
     else
     {
-      ret.origin.y = r1.origin.y
-      ret.size.height = r2.origin.y + r2.size.height - r1.origin.y
+      ret.origin.y = rect1.origin.y
+      ret.size.height = rect2.origin.y + rect2.size.height - rect1.origin.y
     }
 
     return ret

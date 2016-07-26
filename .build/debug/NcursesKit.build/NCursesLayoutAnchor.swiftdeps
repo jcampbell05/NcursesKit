@@ -8,16 +8,16 @@ provides-member:
 - ["C10NcursesKit19NCursesLayoutAnchor", ""]
 - ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", ""]
 depends-top-level:
-- "BooleanLiteralType"
-- !private "*"
-- "NCursesView"
-- !private "IntegerLiteralType"
-- "NCursesLayoutAnchor"
-- !private "FloatLiteralType"
-- !private "+"
-- !private "-"
 - "Int32"
+- !private "+"
+- !private "*"
 - "=="
+- !private "IntegerLiteralType"
+- !private "FloatLiteralType"
+- "NCursesView"
+- !private "-"
+- "BooleanLiteralType"
+- "NCursesLayoutAnchor"
 depends-member:
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "includeBorderInCalculations"]

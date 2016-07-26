@@ -136,15 +136,15 @@ public class NCursesGraphicsContext: NSObject {
 
     func drawToContext(context: NCursesGraphicsContext) {
 
-        guard NRectIntersectsRect(rectA: frame, rectB:context.frame) else {
+        guard NRectIntersectsRect(frame, context.frame) else {
             return
         }
 
-        let displayRect = NRectIntersection(rectA: frame, rectB:context.frame)
+        let displayRect = NRectIntersection(frame, context.frame)
 
         let compositeWindow = newwin(displayRect.size.height, displayRect.size.width, displayRect.origin.y, displayRect.origin.x)
 
-        let isClipping = !NRectContainsRect(rectA: context.frame, rectB: frame)
+        let isClipping = !NRectContainsRect(context.frame, frame)
 
         if isClipping {
             copywin(ncursesWindow, compositeWindow, 0, 0, 0, 0, displayRect.size.height, displayRect.size.width, 1)
