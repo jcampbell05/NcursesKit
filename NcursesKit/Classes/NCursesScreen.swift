@@ -8,9 +8,9 @@
 
 import Foundation
 
-class NCursesScreen {
+public class NCursesScreen {
     
-    var bounds: NRect {
+    public var bounds: NRect {
         return NRect(origin: NPoint.zero, size: NSize(width:getmaxx(stdscr), height:getmaxy(stdscr)))
     }
     
@@ -18,7 +18,7 @@ class NCursesScreen {
         return has_colors()
     }
     
-    init() {
+    public init() {
         
         if amIBeingDebugged() {
             setenv("TERM", "dumb", 1) // Make sure we can still debug it under Xcode

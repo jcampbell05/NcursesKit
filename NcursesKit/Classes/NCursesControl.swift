@@ -8,6 +8,6 @@
 
 import Foundation
 
-class NCursesControl: NCursesView {
+public class NCursesControl: NCursesView {
     
 }

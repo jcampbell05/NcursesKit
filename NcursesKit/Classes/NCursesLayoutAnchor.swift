@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NCursesLayoutAnchor {
+public class NCursesLayoutAnchor {
     
     enum Strategy {
         case Left
@@ -49,7 +49,7 @@ class NCursesLayoutAnchor {
         self.strategy = strategy
     }
     
-    func constraintEqualToAnchor(anchor: NCursesLayoutAnchor, constant c: Int32 = 0) {
+    public func constraintEqualToAnchor(anchor: NCursesLayoutAnchor, constant c: Int32 = 0) {
         
         let value = anchor.value + c
         
@@ -75,7 +75,7 @@ class NCursesLayoutAnchor {
         }
     }
     
-    func constraintEqualToConstant(c: Int32) {
+    public func constraintEqualToConstant(c: Int32) {
         switch strategy {
         case .Left:
             view.frame.origin.x = c

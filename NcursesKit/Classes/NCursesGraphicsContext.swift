@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum NCursesColor: Int32, Equatable {
+public enum NCursesColor: Int32, Equatable {
     
     case Black
     case Red
@@ -90,11 +90,11 @@ enum NCursesColor: Int32, Equatable {
     }()
 }
     
-func == (lhs: NCursesColor, rhs: NCursesColor) -> Bool {
+public func == (lhs: NCursesColor, rhs: NCursesColor) -> Bool {
     return lhs.ncursesValue == rhs.ncursesValue
 }
 
-class NCursesGraphicsContext: NSObject {
+public class NCursesGraphicsContext: NSObject {
     
     let borderCharacterCode: UInt32 = 42
     
@@ -114,15 +114,15 @@ class NCursesGraphicsContext: NSObject {
        self.frame = frame
     }
     
-    var foregroundColor: NCursesColor = .White
-    var backgroundColor: NCursesColor = .Black
-    var hasBorder: Bool = false
+    public var foregroundColor: NCursesColor = .White
+    public var backgroundColor: NCursesColor = .Black
+    public var hasBorder: Bool = false
     
-    func drawText(origin: NPoint, text: String) {
+    public func drawText(origin: NPoint, text: String) {
         mvwaddstr(ncursesWindow, origin.y, origin.x, text)
     }
 
-    func clear() {
+    public func clear() {
         wclear(ncursesWindow)
     }
     

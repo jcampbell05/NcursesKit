@@ -9,7 +9,7 @@
 import Foundation
 import Darwin.ncurses
 
-class NCursesWindow: NCursesView {
+public class NCursesWindow: NCursesView {
     
     private lazy var keyPressTimer: NSTimer = {
         return NSTimer(timeInterval: 0.02, target: self, selector: #selector(keyPressTimerDidFire), userInfo: nil, repeats: true)
@@ -19,7 +19,7 @@ class NCursesWindow: NCursesView {
         return self
     }
     
-    init(frame: NRect) {
+    public init(frame: NRect) {
         
         super.init()
         
@@ -28,7 +28,7 @@ class NCursesWindow: NCursesView {
         NSRunLoop.mainRunLoop().addTimer(keyPressTimer, forMode: NSRunLoopCommonModes)
     }
     
-    override func needsDisplay() {
+    override public func needsDisplay() {
         drawContext()
         
         subviews.forEach {
@@ -39,7 +39,7 @@ class NCursesWindow: NCursesView {
         refresh()
     }
     
-    func makeKeyAndVisible() {
+    public func makeKeyAndVisible() {
         needsDisplay()
     }
     

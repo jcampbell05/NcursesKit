@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NCursesView: NSObject {
+public class NCursesView: NSObject {
     
     // MARK: - Context
     
@@ -16,43 +16,43 @@ class NCursesView: NSObject {
     
     // MARK: - Anchors and Guides
     
-    lazy var layoutGuide: NCursesLayoutGuide = {
+    public lazy var layoutGuide: NCursesLayoutGuide = {
         return NCursesLayoutGuide(view: self)
     }()
     
-    lazy var leftAnchor: NCursesLayoutAnchor = {
+    public lazy var leftAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Left)
     }()
     
-    lazy var topAnchor: NCursesLayoutAnchor = {
+    public lazy var topAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Top)
     }()
     
-    lazy var rightAnchor: NCursesLayoutAnchor = {
+    public lazy var rightAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Right)
     }()
     
-    lazy var bottomAnchor: NCursesLayoutAnchor = {
+    public lazy var bottomAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Bottom)
     }()
     
-    lazy var widthAnchor: NCursesLayoutAnchor = {
+    public lazy var widthAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Width)
     }()
     
-    lazy var heightAnchor: NCursesLayoutAnchor = {
+    public lazy var heightAnchor: NCursesLayoutAnchor = {
         return NCursesLayoutAnchor(view: self, strategy: .Height)
     }()
     
     // MARK: - Layout
     
-    var frame: NRect = NRect.zero {
+    public var frame: NRect = NRect.zero {
         didSet {
             context.frame = frame
         }
     }
     
-    var bounds: NRect {
+    public var bounds: NRect {
         return NRect(origin: NPoint.zero, size: frame.size)
     }
     
@@ -67,18 +67,18 @@ class NCursesView: NSObject {
     
     // MARK: - Methods
     
-    override init() {
+    override public init() {
         context = NCursesGraphicsContext(frame: frame)
         super.init()
     }
     
-    func drawInContext(context: NCursesGraphicsContext) {
+    public func drawInContext(context: NCursesGraphicsContext) {
         subviews.forEach {
             $0.drawContext()
         }
     }
     
-    func needsDisplay() {
+    public func needsDisplay() {
         superview?.needsDisplay()
     }
     
@@ -105,23 +105,23 @@ class NCursesView: NSObject {
         }
     }
     
-    func addSubview(view: NCursesView) {
+    public func addSubview(view: NCursesView) {
         view.superview = self
         subviews.append(view)
         needsDisplay()
     }
     
-    func removeSubview(view: NCursesView) {
+    public func removeSubview(view: NCursesView) {
         subviews = subviews.filter {
             $0 != view
         }
     }
     
-    func removeFromSuperview() {
+    public func removeFromSuperview() {
         superview?.removeSubview(self)
     }
     
-    func didPressKeyForCharacter(character: Character) {
+    public func didPressKeyForCharacter(character: Character) {
         subviews.forEach {
             $0.didPressKeyForCharacter(character)
         }

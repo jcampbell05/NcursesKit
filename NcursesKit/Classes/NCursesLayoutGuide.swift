@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NCursesLayoutGuide {
+public class NCursesLayoutGuide {
     
     // MARK: - View
     
@@ -16,37 +16,37 @@ class NCursesLayoutGuide {
     
     // MARK: - Anchors and Guides
     
-    lazy var leftAnchor: NCursesLayoutAnchor = {
+    public lazy var leftAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Left)
         anchor.includeBorderInCalculations = true
         return anchor
     }()
     
-    lazy var topAnchor: NCursesLayoutAnchor = {
+    public lazy var topAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Top)
         anchor.includeBorderInCalculations = true
         return anchor
     }()
     
-    lazy var rightAnchor: NCursesLayoutAnchor = {
+    public lazy var rightAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Right)
         anchor.includeBorderInCalculations = true
         return anchor
     }()
     
-    lazy var bottomAnchor: NCursesLayoutAnchor = {
+    public lazy var bottomAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Bottom)
         anchor.includeBorderInCalculations = true
         return anchor
     }()
     
-    lazy var widthAnchor: NCursesLayoutAnchor = {
+    public lazy var widthAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Width)
         anchor.includeBorderInCalculations = true
         return anchor
     }()
     
-    lazy var heightAnchor: NCursesLayoutAnchor = {
+    public lazy var heightAnchor: NCursesLayoutAnchor = {
         let anchor = NCursesLayoutAnchor(view: self.view, strategy: .Height)
         anchor.includeBorderInCalculations = true
         return anchor
