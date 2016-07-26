@@ -11,7 +11,6 @@ import CNCURSES
 
 public class NCursesWindow: NCursesView {
 
-    // - Cross Platform Timer
     private lazy var keyPressTimer: NSTimer = {
         return NSTimer.scheduledTimer(0.02, repeats: true) { _ in
           self.keyPressTimerDidFire()
