@@ -1,0 +1,6 @@
+framework module NcursesKit {
+  umbrella header "NcursesKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
