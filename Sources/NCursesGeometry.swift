@@ -27,10 +27,6 @@ public struct NRect {
 
         return self
     }
-
-    private func toCGRect() -> CGRect {
-        return CGRect(origin:origin.toCGPoint(), size:size.toCGSize())
-    }
 }
 
 public struct NPoint {
@@ -45,10 +41,6 @@ public struct NPoint {
     public init(x: NFloat, y: NFloat) {
         self.x = x
         self.y = y
-    }
-
-    private func toCGPoint() -> CGPoint {
-        return CGPoint(x:CGFloat(x), y:CGFloat(y))
     }
 }
 
@@ -65,10 +57,6 @@ public struct NSize {
         self.width = width
         self.height = height
     }
-
-    private func toCGSize() -> CGSize {
-        return CGSize(width:CGFloat(width), height:CGFloat(height))
-    }
 }
 
 public func NRectContainsRect(rectA: NRect, rectB: NRect) -> Bool {
@@ -79,11 +67,31 @@ public func NRectIntersectsRect(rectA: NRect, rectB: NRect) -> Bool {
     return CGRectIntersectsRect(rectA.toCGRect(), rectB.toCGRect())
 }
 
-public func NRectIntersection(rectA: NRect, rectB: NRect) -> NRect {
+public func NRectIntersection(r1: NRect, r2: NRect) -> NRect {
 
-    let intersection = CGRectIntersection(rectA.toCGRect(), rectB.toCGRect())
-    let origin = NPoint(x: NFloat(intersection.origin.x), y: NFloat(intersection.origin.y))
-    let size = NSize(width: NFloat(intersection.size.width), height: NFloat(intersection.size.height))
+    var ret = NRect.zero
 
-    return NRect(origin: origin, size: size)
+    if(r1.origin.x < r2.origin.x)
+    {
+      ret.origin.x = r2.origin.x
+      ret.size.width = r1.origin.x + r1.size.width - r2.origin.x
+    }
+    else
+    {
+      ret.origin.x = r1.origin.x
+      ret.size.width = r2.origin.x + r2.size.width - r1.origin.x
+    }
+
+    if(r1.origin.y < r2.origin.y)
+    {
+      ret.origin.y = r2.origin.y
+      ret.size.height = r1.origin.y + r1.size.height - r2.origin.y
+    }
+    else
+    {
+      ret.origin.y = r1.origin.y
+      ret.size.height = r2.origin.y + r2.size.height - r1.origin.y
+    }
+
+    return ret
 }
