@@ -1,0 +1,108 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NFloat"
+- "NRectEdge"
+- "NRect"
+- "NPoint"
+- "NSize"
+- "NRectContainsRect"
+- "NRectIntersectsRect"
+- "NRectIntersection"
+provides-nominal:
+- "V10NcursesKit5NRect"
+- "V10NcursesKit6NPoint"
+- "V10NcursesKit5NSize"
+provides-member:
+- ["V10NcursesKit5NRect", ""]
+- ["V10NcursesKit6NPoint", ""]
+- ["V10NcursesKit5NSize", ""]
+depends-top-level:
+- "NPoint"
+- "NRect"
+- !private "CGRectIntersection"
+- !private "CGRectContainsRect"
+- "NSize"
+- "NRectIntersection"
+- !private "CGFloat"
+- "NRectContainsRect"
+- "NRectEdge"
+- "CGRectEdge"
+- !private "CGSize"
+- !private "CGRect"
+- !private "FloatLiteralType"
+- "Int32"
+- "NFloat"
+- !private "CGPoint"
+- "NRectIntersectsRect"
+- !private "IntegerLiteralType"
+- "Bool"
+- !private "CGRectIntersectsRect"
+depends-member:
+- !private ["V10Foundation7CGFloat", "init"]
+- !private ["V10Foundation7CGPoint", "init"]
+- !private ["V10Foundation6CGRect", "init"]
+- !private ["V10Foundation6CGSize", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps9Equatable", "init"]
+- !private ["V10NcursesKit6NPoint", "CGFloat"]
+- !private ["V10NcursesKit6NPoint", "CGPoint"]
+- ["V10NcursesKit6NPoint", "NFloat"]
+- ["V10NcursesKit6NPoint", "NPoint"]
+- ["V10NcursesKit6NPoint", "init"]
+- !private ["V10NcursesKit6NPoint", "toCGPoint"]
+- ["V10NcursesKit6NPoint", "x"]
+- ["V10NcursesKit6NPoint", "y"]
+- ["V10NcursesKit6NPoint", "zero"]
+- !private ["V10NcursesKit5NRect", "CGRect"]
+- ["V10NcursesKit5NRect", "NPoint"]
+- ["V10NcursesKit5NRect", "NRect"]
+- ["V10NcursesKit5NRect", "NSize"]
+- ["V10NcursesKit5NRect", "clip"]
+- ["V10NcursesKit5NRect", "init"]
+- ["V10NcursesKit5NRect", "origin"]
+- ["V10NcursesKit5NRect", "size"]
+- !private ["V10NcursesKit5NRect", "toCGRect"]
+- ["V10NcursesKit5NRect", "zero"]
+- !private ["P10Foundation20NSSpecialValueCoding", "init"]
+- !private ["V10NcursesKit5NSize", "CGFloat"]
+- !private ["V10NcursesKit5NSize", "CGSize"]
+- ["V10NcursesKit5NSize", "NFloat"]
+- ["V10NcursesKit5NSize", "NSize"]
+- ["V10NcursesKit5NSize", "height"]
+- ["V10NcursesKit5NSize", "init"]
+- !private ["V10NcursesKit5NSize", "toCGSize"]
+- ["V10NcursesKit5NSize", "width"]
+- ["V10NcursesKit5NSize", "zero"]
+depends-nominal:
+- !private "V10Foundation7CGFloat"
+- !private "V10Foundation7CGPoint"
+- !private "V10Foundation6CGRect"
+- !private "V10Foundation6CGSize"
+- !private "Ps10Comparable"
+- !private "Ps9Equatable"
+- "V10NcursesKit6NPoint"
+- "V10NcursesKit5NRect"
+- !private "P10Foundation20NSSpecialValueCoding"
+- "V10NcursesKit5NSize"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "04fab7639f1023c2b3b91e0dcd5b3e96"

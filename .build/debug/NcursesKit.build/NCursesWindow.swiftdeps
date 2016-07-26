@@ -1,0 +1,478 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NCursesWindow"
+provides-nominal:
+- "C10NcursesKit13NCursesWindow"
+provides-member:
+- ["C10NcursesKit13NCursesWindow", ""]
+depends-top-level:
+- !private "UInt32"
+- !private "IntegerLiteralType"
+- !private "Bool"
+- !private "NSRunLoopCommonModes"
+- !private "!="
+- !private "refresh"
+- !private "UnicodeScalar"
+- !private "getch"
+- !private "NSRunLoop"
+- "NSTimer"
+- !private "StringLiteralType"
+- "NCursesWindow"
+- "NRect"
+- !private "Character"
+- "NCursesView"
+- !private "BooleanLiteralType"
+- !private "ungetch"
+- !private "ERR"
+- !private "FloatLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "Character"]
+- !private ["Ps9AnyObject", "ERR"]
+- !private ["Ps9AnyObject", "NSRunLoop"]
+- !private ["Ps9AnyObject", "NSRunLoopCommonModes"]
+- !private ["Ps9AnyObject", "NSTimer"]
+- !private ["Ps9AnyObject", "UInt32"]
+- !private ["Ps9AnyObject", "UnicodeScalar"]
+- !private ["Ps9AnyObject", "addTimer"]
+- !private ["Ps9AnyObject", "didPressKeyForCharacter"]
+- !private ["Ps9AnyObject", "drawContext"]
+- !private ["Ps9AnyObject", "flushContext"]
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "getch"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "keyPressTimer"]
+- ["Ps9AnyObject", "keyPressTimer.storage"]
+- ["Ps9AnyObject", "keyPressTimerDidFire"]
+- ["Ps9AnyObject", "keyPressed"]
+- !private ["Ps9AnyObject", "mainRunLoop"]
+- ["Ps9AnyObject", "makeKeyAndVisible"]
+- ["Ps9AnyObject", "needsDisplay"]
+- !private ["Ps9AnyObject", "refresh"]
+- !private ["Ps9AnyObject", "scheduledTimer"]
+- !private ["Ps9AnyObject", "subviews"]
+- !private ["Ps9AnyObject", "ungetch"]
+- ["Ps9AnyObject", "window"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "forEach"]
+- !private ["Ps23ArrayLiteralConvertible", "Iterator"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "forEach"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "forEach"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "forEach"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["P10Foundation10Bridgeable", "Iterator"]
+- !private ["P10Foundation10Bridgeable", "_Element"]
+- !private ["P10Foundation10Bridgeable", "forEach"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Vs9Character", "init"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "forEach"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Character"]
+- !private ["Ps28CustomDebugStringConvertible", "ERR"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "NSRunLoop"]
+- !private ["Ps28CustomDebugStringConvertible", "NSRunLoopCommonModes"]
+- !private ["Ps28CustomDebugStringConvertible", "NSTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "UInt32"]
+- !private ["Ps28CustomDebugStringConvertible", "UnicodeScalar"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "didPressKeyForCharacter"]
+- !private ["Ps28CustomDebugStringConvertible", "drawContext"]
+- !private ["Ps28CustomDebugStringConvertible", "flushContext"]
+- !private ["Ps28CustomDebugStringConvertible", "forEach"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "getch"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "keyPressTimer"]
+- ["Ps28CustomDebugStringConvertible", "keyPressTimer.storage"]
+- ["Ps28CustomDebugStringConvertible", "keyPressTimerDidFire"]
+- ["Ps28CustomDebugStringConvertible", "keyPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "mainRunLoop"]
+- ["Ps28CustomDebugStringConvertible", "makeKeyAndVisible"]
+- ["Ps28CustomDebugStringConvertible", "needsDisplay"]
+- !private ["Ps28CustomDebugStringConvertible", "refresh"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "subviews"]
+- !private ["Ps28CustomDebugStringConvertible", "ungetch"]
+- ["Ps28CustomDebugStringConvertible", "window"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "forEach"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Character"]
+- !private ["Ps23CustomStringConvertible", "ERR"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "NSRunLoop"]
+- !private ["Ps23CustomStringConvertible", "NSRunLoopCommonModes"]
+- !private ["Ps23CustomStringConvertible", "NSTimer"]
+- !private ["Ps23CustomStringConvertible", "UInt32"]
+- !private ["Ps23CustomStringConvertible", "UnicodeScalar"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addTimer"]
+- !private ["Ps23CustomStringConvertible", "didPressKeyForCharacter"]
+- !private ["Ps23CustomStringConvertible", "drawContext"]
+- !private ["Ps23CustomStringConvertible", "flushContext"]
+- !private ["Ps23CustomStringConvertible", "forEach"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "getch"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "keyPressTimer"]
+- ["Ps23CustomStringConvertible", "keyPressTimer.storage"]
+- ["Ps23CustomStringConvertible", "keyPressTimerDidFire"]
+- ["Ps23CustomStringConvertible", "keyPressed"]
+- !private ["Ps23CustomStringConvertible", "mainRunLoop"]
+- ["Ps23CustomStringConvertible", "makeKeyAndVisible"]
+- ["Ps23CustomStringConvertible", "needsDisplay"]
+- !private ["Ps23CustomStringConvertible", "refresh"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimer"]
+- !private ["Ps23CustomStringConvertible", "subviews"]
+- !private ["Ps23CustomStringConvertible", "ungetch"]
+- ["Ps23CustomStringConvertible", "window"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Character"]
+- !private ["Ps9Equatable", "ERR"]
+- !private ["Ps9Equatable", "NSRunLoop"]
+- !private ["Ps9Equatable", "NSRunLoopCommonModes"]
+- !private ["Ps9Equatable", "NSTimer"]
+- !private ["Ps9Equatable", "UInt32"]
+- !private ["Ps9Equatable", "UnicodeScalar"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addTimer"]
+- !private ["Ps9Equatable", "didPressKeyForCharacter"]
+- !private ["Ps9Equatable", "drawContext"]
+- !private ["Ps9Equatable", "flushContext"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "getch"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "keyPressTimer"]
+- ["Ps9Equatable", "keyPressTimer.storage"]
+- ["Ps9Equatable", "keyPressTimerDidFire"]
+- ["Ps9Equatable", "keyPressed"]
+- !private ["Ps9Equatable", "mainRunLoop"]
+- ["Ps9Equatable", "makeKeyAndVisible"]
+- ["Ps9Equatable", "needsDisplay"]
+- !private ["Ps9Equatable", "refresh"]
+- !private ["Ps9Equatable", "scheduledTimer"]
+- !private ["Ps9Equatable", "subviews"]
+- !private ["Ps9Equatable", "ungetch"]
+- ["Ps9Equatable", "window"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps8Hashable", "Character"]
+- !private ["Ps8Hashable", "ERR"]
+- !private ["Ps8Hashable", "NSRunLoop"]
+- !private ["Ps8Hashable", "NSRunLoopCommonModes"]
+- !private ["Ps8Hashable", "NSTimer"]
+- !private ["Ps8Hashable", "UInt32"]
+- !private ["Ps8Hashable", "UnicodeScalar"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addTimer"]
+- !private ["Ps8Hashable", "didPressKeyForCharacter"]
+- !private ["Ps8Hashable", "drawContext"]
+- !private ["Ps8Hashable", "flushContext"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "getch"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "keyPressTimer"]
+- ["Ps8Hashable", "keyPressTimer.storage"]
+- ["Ps8Hashable", "keyPressTimerDidFire"]
+- ["Ps8Hashable", "keyPressed"]
+- !private ["Ps8Hashable", "mainRunLoop"]
+- ["Ps8Hashable", "makeKeyAndVisible"]
+- ["Ps8Hashable", "needsDisplay"]
+- !private ["Ps8Hashable", "refresh"]
+- !private ["Ps8Hashable", "scheduledTimer"]
+- !private ["Ps8Hashable", "subviews"]
+- !private ["Ps8Hashable", "ungetch"]
+- ["Ps8Hashable", "window"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "forEach"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "forEach"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "forEach"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "forEach"]
+- !private ["C10NcursesKit11NCursesView", "Bool"]
+- !private ["C10NcursesKit11NCursesView", "Character"]
+- !private ["C10NcursesKit11NCursesView", "ERR"]
+- ["C10NcursesKit11NCursesView", "NCursesWindow"]
+- ["C10NcursesKit11NCursesView", "NRect"]
+- !private ["C10NcursesKit11NCursesView", "NSRunLoop"]
+- !private ["C10NcursesKit11NCursesView", "NSRunLoopCommonModes"]
+- ["C10NcursesKit11NCursesView", "NSTimer"]
+- !private ["C10NcursesKit11NCursesView", "UInt32"]
+- !private ["C10NcursesKit11NCursesView", "UnicodeScalar"]
+- !private ["C10NcursesKit11NCursesView", "didPressKeyForCharacter"]
+- !private ["C10NcursesKit11NCursesView", "drawContext"]
+- !private ["C10NcursesKit11NCursesView", "flushContext"]
+- !private ["C10NcursesKit11NCursesView", "frame"]
+- !private ["C10NcursesKit11NCursesView", "getch"]
+- ["C10NcursesKit11NCursesView", "init"]
+- ["C10NcursesKit11NCursesView", "keyPressTimer"]
+- ["C10NcursesKit11NCursesView", "keyPressTimer.storage"]
+- ["C10NcursesKit11NCursesView", "keyPressTimerDidFire"]
+- ["C10NcursesKit11NCursesView", "keyPressed"]
+- ["C10NcursesKit11NCursesView", "makeKeyAndVisible"]
+- ["C10NcursesKit11NCursesView", "needsDisplay"]
+- !private ["C10NcursesKit11NCursesView", "refresh"]
+- !private ["C10NcursesKit11NCursesView", "subviews"]
+- !private ["C10NcursesKit11NCursesView", "ungetch"]
+- ["C10NcursesKit11NCursesView", "window"]
+- ["C10NcursesKit11NCursesView", ""]
+- !private ["C10NcursesKit13NCursesWindow", "Bool"]
+- !private ["C10NcursesKit13NCursesWindow", "Character"]
+- !private ["C10NcursesKit13NCursesWindow", "ERR"]
+- ["C10NcursesKit13NCursesWindow", "NCursesWindow"]
+- ["C10NcursesKit13NCursesWindow", "NRect"]
+- !private ["C10NcursesKit13NCursesWindow", "NSRunLoop"]
+- !private ["C10NcursesKit13NCursesWindow", "NSRunLoopCommonModes"]
+- ["C10NcursesKit13NCursesWindow", "NSTimer"]
+- !private ["C10NcursesKit13NCursesWindow", "UInt32"]
+- !private ["C10NcursesKit13NCursesWindow", "UnicodeScalar"]
+- ["C10NcursesKit13NCursesWindow", "deinit"]
+- !private ["C10NcursesKit13NCursesWindow", "didPressKeyForCharacter"]
+- !private ["C10NcursesKit13NCursesWindow", "drawContext"]
+- !private ["C10NcursesKit13NCursesWindow", "flushContext"]
+- !private ["C10NcursesKit13NCursesWindow", "frame"]
+- !private ["C10NcursesKit13NCursesWindow", "getch"]
+- ["C10NcursesKit13NCursesWindow", "init"]
+- !private ["C10NcursesKit13NCursesWindow", "keyPressTimer"]
+- !private ["C10NcursesKit13NCursesWindow", "keyPressTimer.storage"]
+- !private ["C10NcursesKit13NCursesWindow", "keyPressTimerDidFire"]
+- !private ["C10NcursesKit13NCursesWindow", "keyPressed"]
+- ["C10NcursesKit13NCursesWindow", "makeKeyAndVisible"]
+- ["C10NcursesKit13NCursesWindow", "needsDisplay"]
+- !private ["C10NcursesKit13NCursesWindow", "refresh"]
+- !private ["C10NcursesKit13NCursesWindow", "subviews"]
+- !private ["C10NcursesKit13NCursesWindow", "ungetch"]
+- ["C10NcursesKit13NCursesWindow", "window"]
+- !private ["C10Foundation8NSObject", "Bool"]
+- !private ["C10Foundation8NSObject", "Character"]
+- !private ["C10Foundation8NSObject", "ERR"]
+- ["C10Foundation8NSObject", "NCursesWindow"]
+- ["C10Foundation8NSObject", "NRect"]
+- !private ["C10Foundation8NSObject", "NSRunLoop"]
+- !private ["C10Foundation8NSObject", "NSRunLoopCommonModes"]
+- ["C10Foundation8NSObject", "NSTimer"]
+- !private ["C10Foundation8NSObject", "UInt32"]
+- !private ["C10Foundation8NSObject", "UnicodeScalar"]
+- !private ["C10Foundation8NSObject", "addTimer"]
+- !private ["C10Foundation8NSObject", "didPressKeyForCharacter"]
+- !private ["C10Foundation8NSObject", "drawContext"]
+- !private ["C10Foundation8NSObject", "flushContext"]
+- !private ["C10Foundation8NSObject", "frame"]
+- !private ["C10Foundation8NSObject", "getch"]
+- ["C10Foundation8NSObject", "init"]
+- ["C10Foundation8NSObject", "keyPressTimer"]
+- ["C10Foundation8NSObject", "keyPressTimer.storage"]
+- ["C10Foundation8NSObject", "keyPressTimerDidFire"]
+- ["C10Foundation8NSObject", "keyPressed"]
+- !private ["C10Foundation8NSObject", "mainRunLoop"]
+- ["C10Foundation8NSObject", "makeKeyAndVisible"]
+- ["C10Foundation8NSObject", "needsDisplay"]
+- !private ["C10Foundation8NSObject", "refresh"]
+- !private ["C10Foundation8NSObject", "scheduledTimer"]
+- !private ["C10Foundation8NSObject", "subviews"]
+- !private ["C10Foundation8NSObject", "ungetch"]
+- ["C10Foundation8NSObject", "window"]
+- !private ["P10Foundation16NSObjectProtocol", "Character"]
+- !private ["P10Foundation16NSObjectProtocol", "ERR"]
+- !private ["P10Foundation16NSObjectProtocol", "NSRunLoop"]
+- !private ["P10Foundation16NSObjectProtocol", "NSRunLoopCommonModes"]
+- !private ["P10Foundation16NSObjectProtocol", "NSTimer"]
+- !private ["P10Foundation16NSObjectProtocol", "UInt32"]
+- !private ["P10Foundation16NSObjectProtocol", "UnicodeScalar"]
+- !private ["P10Foundation16NSObjectProtocol", "addTimer"]
+- !private ["P10Foundation16NSObjectProtocol", "didPressKeyForCharacter"]
+- !private ["P10Foundation16NSObjectProtocol", "drawContext"]
+- !private ["P10Foundation16NSObjectProtocol", "flushContext"]
+- !private ["P10Foundation16NSObjectProtocol", "frame"]
+- !private ["P10Foundation16NSObjectProtocol", "getch"]
+- ["P10Foundation16NSObjectProtocol", "init"]
+- ["P10Foundation16NSObjectProtocol", "keyPressTimer"]
+- ["P10Foundation16NSObjectProtocol", "keyPressTimer.storage"]
+- ["P10Foundation16NSObjectProtocol", "keyPressTimerDidFire"]
+- ["P10Foundation16NSObjectProtocol", "keyPressed"]
+- !private ["P10Foundation16NSObjectProtocol", "mainRunLoop"]
+- ["P10Foundation16NSObjectProtocol", "makeKeyAndVisible"]
+- ["P10Foundation16NSObjectProtocol", "needsDisplay"]
+- !private ["P10Foundation16NSObjectProtocol", "refresh"]
+- !private ["P10Foundation16NSObjectProtocol", "scheduledTimer"]
+- !private ["P10Foundation16NSObjectProtocol", "subviews"]
+- !private ["P10Foundation16NSObjectProtocol", "ungetch"]
+- ["P10Foundation16NSObjectProtocol", "window"]
+- ["P10Foundation16NSObjectProtocol", ""]
+- !private ["C10Foundation9NSRunLoop", "addTimer"]
+- !private ["C10Foundation9NSRunLoop", "mainRunLoop"]
+- !private ["C10Foundation7NSTimer", "scheduledTimer"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "forEach"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "forEach"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "forEach"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "forEach"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "forEach"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Sc", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "forEach"]
+- !private ["P10Foundation13_BitShiftable", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["P10Foundation12_CFBridgable", "Iterator"]
+- !private ["P10Foundation12_CFBridgable", "_Element"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "forEach"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "forEach"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["P10Foundation12_IntegerLike", "init"]
+- !private ["P10Foundation12_NSBridgable", "Iterator"]
+- !private ["P10Foundation12_NSBridgable", "_Element"]
+- !private ["P10Foundation12_NSBridgable", "forEach"]
+- !private ["P10Foundation22_NSObjectRepresentable", "Iterator"]
+- !private ["P10Foundation22_NSObjectRepresentable", "_Element"]
+- !private ["P10Foundation22_NSObjectRepresentable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation22_NSObjectRepresentable", "forEach"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Iterator"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "forEach"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "P10Foundation10Bridgeable"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps16IteratorProtocol"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "C10NcursesKit11NCursesView"
+- "C10NcursesKit13NCursesWindow"
+- "C10Foundation8NSObject"
+- "P10Foundation16NSObjectProtocol"
+- !private "C10Foundation9NSRunLoop"
+- !private "C10Foundation7NSTimer"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "Vs6UInt32"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps15UnsignedInteger"
+- !private "Ps14_ArrayProtocol"
+- !private "P10Foundation13_BitShiftable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "P10Foundation12_CFBridgable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
+- !private "P10Foundation12_NSBridgable"
+- !private "P10Foundation22_NSObjectRepresentable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "8821a160622ccbf0f95004be27f9a698"

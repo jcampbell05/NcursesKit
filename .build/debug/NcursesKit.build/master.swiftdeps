@@ -1,0 +1,13 @@
+version: "Swift version 3.0 (swift-3.0-PREVIEW-2)"
+options: "e83d1f339e880b7b14850eb71a1f3552"
+build_time: [522881446, 605006000]
+inputs:
+  "/NcursesKit/Sources/NCursesControl.swift": [522852090, 0]
+  "/NcursesKit/Sources/NCursesGeometry.swift": !private [522880779, 0]
+  "/NcursesKit/Sources/NCursesGraphicsContext.swift": [522876512, 0]
+  "/NcursesKit/Sources/NcursesKit.swift": [522873349, 0]
+  "/NcursesKit/Sources/NCursesLayoutAnchor.swift": [522858132, 0]
+  "/NcursesKit/Sources/NCursesLayoutGuide.swift": [522858157, 0]
+  "/NcursesKit/Sources/NCursesScreen.swift": [522873352, 0]
+  "/NcursesKit/Sources/NCursesView.swift": [522868798, 0]
+  "/NcursesKit/Sources/NCursesWindow.swift": [522881445, 0]

@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import CNCURSES
 
 public class NCursesWindow: NCursesView {
 
     // - Cross Platform Timer
     private lazy var keyPressTimer: NSTimer = {
-        return NSTimer(timeInterval: 0.02, target: self, selector: #selector(keyPressTimerDidFire), userInfo: nil, repeats: true)
+        return NSTimer.scheduledTimer(0.02, repeats: true) { _ in
+          self.keyPressTimerDidFire()
+        }
     }()
 
     override var window: NCursesWindow? {
@@ -55,7 +58,7 @@ public class NCursesWindow: NCursesView {
         }
     }
 
-    @objc private func keyPressTimerDidFire() {
+    private func keyPressTimerDidFire() {
 
         guard keyPressed() else {
             return
@@ -65,6 +68,6 @@ public class NCursesWindow: NCursesView {
         let characterScalar = UnicodeScalar(pressedCharacterCode)
         let character = Character(characterScalar)
 
-        didPressKeyForCharacter(character)
+        didPressKeyForCharacter(character: character)
     }
 }

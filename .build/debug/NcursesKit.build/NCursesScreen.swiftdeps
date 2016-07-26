@@ -1,0 +1,137 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NCursesScreen"
+provides-nominal:
+- "C10NcursesKit13NCursesScreen"
+provides-member:
+- ["C10NcursesKit13NCursesScreen", ""]
+depends-top-level:
+- !private "curs_set"
+- !private "getmaxx"
+- !private "NSize"
+- !private "NCursesColor"
+- !private "getmaxy"
+- !private "LC_ALL"
+- !private "BooleanLiteralType"
+- !private "setlocale"
+- !private "noecho"
+- !private "stdscr"
+- !private "NPoint"
+- !private "FloatLiteralType"
+- "NRect"
+- !private "IntegerLiteralType"
+- !private "nodelay"
+- "Bool"
+- !private "setenv"
+- !private "has_colors"
+- !private "start_color"
+- !private "StringLiteralType"
+- "NCursesScreen"
+- !private "initscr"
+depends-member:
+- !private ["Ps9AnyObject", "LC_ALL"]
+- !private ["Ps9AnyObject", "NCursesColor"]
+- !private ["Ps9AnyObject", "NPoint"]
+- !private ["Ps9AnyObject", "NRect"]
+- !private ["Ps9AnyObject", "NSize"]
+- !private ["Ps9AnyObject", "amIBeingDebugged"]
+- !private ["Ps9AnyObject", "curs_set"]
+- !private ["Ps9AnyObject", "getmaxx"]
+- !private ["Ps9AnyObject", "getmaxy"]
+- !private ["Ps9AnyObject", "hasColors"]
+- !private ["Ps9AnyObject", "has_colors"]
+- !private ["Ps9AnyObject", "initscr"]
+- !private ["Ps9AnyObject", "nodelay"]
+- !private ["Ps9AnyObject", "noecho"]
+- !private ["Ps9AnyObject", "setenv"]
+- !private ["Ps9AnyObject", "setlocale"]
+- !private ["Ps9AnyObject", "start_color"]
+- !private ["Ps9AnyObject", "stdscr"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "registerColorPairs"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "registerColorPairs"]
+- !private ["SQ", "deinit"]
+- !private ["O10NcursesKit12NCursesColor", "registerColorPairs"]
+- ["C10NcursesKit13NCursesScreen", "Bool"]
+- !private ["C10NcursesKit13NCursesScreen", "LC_ALL"]
+- !private ["C10NcursesKit13NCursesScreen", "NCursesColor"]
+- !private ["C10NcursesKit13NCursesScreen", "NPoint"]
+- ["C10NcursesKit13NCursesScreen", "NRect"]
+- !private ["C10NcursesKit13NCursesScreen", "NSize"]
+- !private ["C10NcursesKit13NCursesScreen", "amIBeingDebugged"]
+- ["C10NcursesKit13NCursesScreen", "bounds"]
+- !private ["C10NcursesKit13NCursesScreen", "curs_set"]
+- ["C10NcursesKit13NCursesScreen", "deinit"]
+- !private ["C10NcursesKit13NCursesScreen", "getmaxx"]
+- !private ["C10NcursesKit13NCursesScreen", "getmaxy"]
+- !private ["C10NcursesKit13NCursesScreen", "hasColors"]
+- !private ["C10NcursesKit13NCursesScreen", "has_colors"]
+- ["C10NcursesKit13NCursesScreen", "init"]
+- !private ["C10NcursesKit13NCursesScreen", "initscr"]
+- !private ["C10NcursesKit13NCursesScreen", "nodelay"]
+- !private ["C10NcursesKit13NCursesScreen", "noecho"]
+- !private ["C10NcursesKit13NCursesScreen", "setenv"]
+- !private ["C10NcursesKit13NCursesScreen", "setlocale"]
+- !private ["C10NcursesKit13NCursesScreen", "start_color"]
+- !private ["C10NcursesKit13NCursesScreen", "stdscr"]
+- !private ["V10NcursesKit6NPoint", "zero"]
+- !private ["V10NcursesKit5NRect", "init"]
+- !private ["V10NcursesKit5NSize", "init"]
+- !private ["Ps16RawRepresentable", "registerColorPairs"]
+- !private ["SP", "deinit"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation22_NSObjectRepresentable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "SQ"
+- !private "O10NcursesKit12NCursesColor"
+- "C10NcursesKit13NCursesScreen"
+- !private "V10NcursesKit6NPoint"
+- !private "V10NcursesKit5NRect"
+- !private "V10NcursesKit5NSize"
+- !private "Ps16RawRepresentable"
+- !private "SP"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "P10Foundation12_CFBridgable"
+- !private "P10Foundation22_NSObjectRepresentable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "37535284038b3b9a4a442e756b7d9860"

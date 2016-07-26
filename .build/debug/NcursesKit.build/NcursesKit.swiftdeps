@@ -1,0 +1,35 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NcursesKit"
+provides-nominal:
+- "V10NcursesKit10NcursesKit"
+provides-member:
+- ["V10NcursesKit10NcursesKit", ""]
+depends-top-level:
+- "NcursesKit"
+depends-member:
+- ["V10NcursesKit10NcursesKit", "init"]
+depends-nominal:
+- "V10NcursesKit10NcursesKit"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "484ff9d00a717114a38e478fb962ebf7"

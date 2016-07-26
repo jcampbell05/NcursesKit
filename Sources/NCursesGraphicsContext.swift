@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CNCURSES
 
 public enum NCursesColor: Int32, Equatable {
 
@@ -20,19 +21,19 @@ public enum NCursesColor: Int32, Equatable {
     case White
 
     static func registerColorPairs() {
-        colorPairs.enumerate().forEach { index, pair in
+        colorPairs.enumerated().forEach { index, pair in
             init_pair(Int16(index), Int16(pair.1.ncursesValue), Int16(pair.0.ncursesValue))
         }
     }
 
-    private static func ncursesPairForPair(pair: (backgroundColor: NCursesColor, foregroundColor: NCursesColor)) -> UInt32? {
+    private static func ncursesPairForPair(pair: (backgroundColor: NCursesColor, foregroundColor: NCursesColor)) -> UInt? {
 
         guard let colorPairID = pairIDForPair(pair: pair) else {
             return nil
         }
 
         let colorPair = COLOR_PAIR(Int32(colorPairID))
-        return UInt32(colorPair)
+        return UInt(colorPair)
     }
 
     private static func pairIDForPair(pair: (backgroundColor: NCursesColor, foregroundColor: NCursesColor)) -> Int32? {
@@ -94,11 +95,11 @@ public func == (lhs: NCursesColor, rhs: NCursesColor) -> Bool {
     return lhs.ncursesValue == rhs.ncursesValue
 }
 
-typealias NCursesWindowPointer = OpaquePointer
+typealias NCursesWindowPointer = UnsafeMutablePointer<WINDOW>?
 
 public class NCursesGraphicsContext: NSObject {
 
-    let borderCharacterCode: UInt32 = 42
+    let borderCharacterCode: UInt = 42
 
     private var ncursesWindow: NCursesWindowPointer
 

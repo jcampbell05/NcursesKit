@@ -1,0 +1,202 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NCursesLayoutAnchor"
+provides-nominal:
+- "C10NcursesKit19NCursesLayoutAnchor"
+- "OC10NcursesKit19NCursesLayoutAnchor8Strategy"
+provides-member:
+- ["C10NcursesKit19NCursesLayoutAnchor", ""]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", ""]
+depends-top-level:
+- "BooleanLiteralType"
+- !private "*"
+- "NCursesView"
+- !private "IntegerLiteralType"
+- "NCursesLayoutAnchor"
+- !private "FloatLiteralType"
+- !private "+"
+- !private "-"
+- "Int32"
+- "=="
+depends-member:
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "includeBorderInCalculations"]
+- !private ["Ps9AnyObject", "strategy"]
+- !private ["Ps9AnyObject", "value"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps9Equatable", "Bottom"]
+- ["Ps9Equatable", "Height"]
+- ["Ps9Equatable", "Left"]
+- ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Stride"]
+- ["Ps9Equatable", "Top"]
+- ["Ps9Equatable", "Width"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "Bottom"]
+- ["Ps8Hashable", "Height"]
+- ["Ps8Hashable", "Left"]
+- ["Ps8Hashable", "Right"]
+- !private ["Ps8Hashable", "Stride"]
+- ["Ps8Hashable", "Top"]
+- ["Ps8Hashable", "Width"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Vs5Int32", "Stride"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "Int32"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "NCursesLayoutAnchor"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "NCursesView"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "Strategy"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "constraintEqualToAnchor"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "constraintEqualToConstant"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "deinit"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "includeBorderInCalculations"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "init"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "strategy"]
+- !private ["C10NcursesKit19NCursesLayoutAnchor", "value"]
+- ["C10NcursesKit19NCursesLayoutAnchor", "view"]
+- !private ["C10NcursesKit11NCursesView", "frame"]
+- !private ["V10NcursesKit6NPoint", "x"]
+- !private ["V10NcursesKit6NPoint", "y"]
+- !private ["V10NcursesKit5NRect", "origin"]
+- !private ["V10NcursesKit5NRect", "size"]
+- !private ["C10Foundation8NSObject", "frame"]
+- !private ["P10Foundation16NSObjectProtocol", "frame"]
+- !private ["V10NcursesKit5NSize", "height"]
+- !private ["V10NcursesKit5NSize", "width"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Bottom"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Height"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Left"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Right"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Top"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Width"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "deinit"]
+- ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "hashValue"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["P10Foundation13_BitShiftable", "Stride"]
+- !private ["P10Foundation13_BitShiftable", "hashValue"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["P10Foundation12_IntegerLike", "Stride"]
+- !private ["P10Foundation12_IntegerLike", "hashValue"]
+- !private ["P10Foundation22_NSObjectRepresentable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation22_NSObjectRepresentable", "hashValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "hashValue"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps10MirrorPath"
+- "C10NcursesKit19NCursesLayoutAnchor"
+- !private "C10NcursesKit11NCursesView"
+- !private "V10NcursesKit6NPoint"
+- !private "V10NcursesKit5NRect"
+- !private "C10Foundation8NSObject"
+- !private "P10Foundation16NSObjectProtocol"
+- !private "V10NcursesKit5NSize"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "OC10NcursesKit19NCursesLayoutAnchor8Strategy"
+- !private "Ps10Strideable"
+- !private "P10Foundation13_BitShiftable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "P10Foundation12_CFBridgable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
+- !private "P10Foundation22_NSObjectRepresentable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "2089f7e639a42c0d9f8663f0fa7b38a3"

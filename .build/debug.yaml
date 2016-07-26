@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<NcursesKit.module>","<NcursesKitTestSuite.module>","<NcursesKitTests.test>"]
+  "main": ["<NcursesKit.module>"]
+default: "main"
+commands: 
+  "<NcursesKit.module>":
+    tool: swift-compiler
+    executable: "/usr/bin/swiftc"
+    module-name: "NcursesKit"
+    module-output-path: "/NcursesKit/.build/debug/NcursesKit.swiftmodule"
+    inputs: ["<CNCURSES.module>"]
+    outputs: ["<NcursesKit.module>","/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swift.o"]
+    import-paths: ["/NcursesKit/.build/debug"]
+    temps-path: "/NcursesKit/.build/debug/NcursesKit.build"
+    objects: ["/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-Xcc","-fmodule-map-file=/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap","-module-cache-path","/NcursesKit/.build/debug/ModuleCache"]
+    sources: ["/NcursesKit/Sources/NCursesControl.swift","/NcursesKit/Sources/NCursesGeometry.swift","/NcursesKit/Sources/NCursesGraphicsContext.swift","/NcursesKit/Sources/NcursesKit.swift","/NcursesKit/Sources/NCursesLayoutAnchor.swift","/NcursesKit/Sources/NCursesLayoutGuide.swift","/NcursesKit/Sources/NCursesScreen.swift","/NcursesKit/Sources/NCursesView.swift","/NcursesKit/Sources/NCursesWindow.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<NcursesKitTestSuite.module>":
+    tool: swift-compiler
+    executable: "/usr/bin/swiftc"
+    module-name: "NcursesKitTestSuite"
+    module-output-path: "/NcursesKit/.build/debug/NcursesKitTestSuite.swiftmodule"
+    inputs: ["<CNCURSES.module>","<NcursesKit.module>"]
+    outputs: ["<NcursesKitTestSuite.module>","/NcursesKit/.build/debug/NcursesKitTestSuite.build/NcursesKitTests.swift.o"]
+    import-paths: ["/NcursesKit/.build/debug"]
+    temps-path: "/NcursesKit/.build/debug/NcursesKitTestSuite.build"
+    objects: ["/NcursesKit/.build/debug/NcursesKitTestSuite.build/NcursesKitTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-Xcc","-fmodule-map-file=/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap","-module-cache-path","/NcursesKit/.build/debug/ModuleCache"]
+    sources: ["/NcursesKit/Tests/NcursesKit/NcursesKitTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<NcursesKitTests.test>":
+    tool: shell
+    description: "Linking .build/debug/NcursesKitTests.xctest"
+    inputs: ["/NcursesKit/.build/debug/NcursesKitTestSuite.build/NcursesKitTests.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swift.o"]
+    outputs: ["<NcursesKitTests.test>","/NcursesKit/.build/debug/NcursesKitTests.xctest"]
+    args: ["/usr/bin/swiftc","-Xlinker","-rpath=$ORIGIN","-g","-L/NcursesKit/.build/debug","-o","/NcursesKit/.build/debug/NcursesKitTests.xctest","-module-name","NcursesKitTests","/NcursesKit/Tests/LinuxMain.swift","-Xcc","-fmodule-map-file=/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap","-emit-executable","-I","/NcursesKit/.build/debug","/NcursesKit/.build/debug/NcursesKitTestSuite.build/NcursesKitTests.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swift.o","/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swift.o"]
+

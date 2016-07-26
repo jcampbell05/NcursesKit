@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/master.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesControl.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesControl~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesControl.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesGeometry.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGeometry.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesGraphicsContext.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesGraphicsContext.swiftdeps"
+  },
+  "/NcursesKit/Sources/NcursesKit.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NcursesKit~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NcursesKit.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesLayoutAnchor.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutAnchor.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesLayoutGuide.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesLayoutGuide.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesScreen.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesScreen.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesView.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesView.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesView~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesView.swiftdeps"
+  },
+  "/NcursesKit/Sources/NCursesWindow.swift": {
+    "dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.d",
+    "object": "/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swift.o",
+    "swiftmodule": "/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow~partial.swiftmodule",
+    "swift-dependencies": "/NcursesKit/.build/debug/NcursesKit.build/NCursesWindow.swiftdeps"
+  }
+}

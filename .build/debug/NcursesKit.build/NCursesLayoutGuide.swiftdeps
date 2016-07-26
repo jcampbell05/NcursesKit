@@ -1,0 +1,105 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NCursesLayoutGuide"
+provides-nominal:
+- "C10NcursesKit18NCursesLayoutGuide"
+provides-member:
+- ["C10NcursesKit18NCursesLayoutGuide", ""]
+depends-top-level:
+- "NCursesView"
+- "NCursesLayoutAnchor"
+- "NCursesLayoutGuide"
+depends-member:
+- !private ["Ps9AnyObject", "NCursesLayoutAnchor"]
+- !private ["Ps9AnyObject", "includeBorderInCalculations"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "Bottom"]
+- !private ["Ps9Equatable", "Height"]
+- !private ["Ps9Equatable", "Left"]
+- !private ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Top"]
+- !private ["Ps9Equatable", "Width"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "Bottom"]
+- !private ["Ps8Hashable", "Height"]
+- !private ["Ps8Hashable", "Left"]
+- !private ["Ps8Hashable", "Right"]
+- !private ["Ps8Hashable", "Top"]
+- !private ["Ps8Hashable", "Width"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["C10NcursesKit19NCursesLayoutAnchor", "includeBorderInCalculations"]
+- !private ["C10NcursesKit19NCursesLayoutAnchor", "init"]
+- ["C10NcursesKit18NCursesLayoutGuide", "NCursesLayoutAnchor"]
+- ["C10NcursesKit18NCursesLayoutGuide", "NCursesView"]
+- ["C10NcursesKit18NCursesLayoutGuide", "bottomAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "bottomAnchor.storage"]
+- ["C10NcursesKit18NCursesLayoutGuide", "deinit"]
+- ["C10NcursesKit18NCursesLayoutGuide", "heightAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "heightAnchor.storage"]
+- ["C10NcursesKit18NCursesLayoutGuide", "init"]
+- ["C10NcursesKit18NCursesLayoutGuide", "leftAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "leftAnchor.storage"]
+- ["C10NcursesKit18NCursesLayoutGuide", "rightAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "rightAnchor.storage"]
+- ["C10NcursesKit18NCursesLayoutGuide", "topAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "topAnchor.storage"]
+- ["C10NcursesKit18NCursesLayoutGuide", "view"]
+- ["C10NcursesKit18NCursesLayoutGuide", "widthAnchor"]
+- !private ["C10NcursesKit18NCursesLayoutGuide", "widthAnchor.storage"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Bottom"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Height"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Left"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Right"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Top"]
+- !private ["OC10NcursesKit19NCursesLayoutAnchor8Strategy", "Width"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation22_NSObjectRepresentable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "C10NcursesKit19NCursesLayoutAnchor"
+- "C10NcursesKit18NCursesLayoutGuide"
+- !private "OC10NcursesKit19NCursesLayoutAnchor8Strategy"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "P10Foundation12_CFBridgable"
+- !private "P10Foundation22_NSObjectRepresentable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/NcursesKit/Packages/CNCURSES-2.0.0/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.map"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+interface-hash: "0237f81d89c4a4015f13acb4ca6f8a21"
