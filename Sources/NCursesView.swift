@@ -84,7 +84,7 @@ public class NCursesView: NSObject {
 
     func drawContext() {
         context.clear()
-        drawInContext(context: context)
+        drawInContext(context)
     }
 
     func flushContext() {
@@ -92,16 +92,16 @@ public class NCursesView: NSObject {
         context.flush()
 
         subviews.forEach {
-            $0.flushContextToContext(context: context)
+            $0.flushContextToContext(context)
         }
     }
 
-    func flushContextToContext(context: NCursesGraphicsContext) {
+    func flushContextToContext(_ context: NCursesGraphicsContext) {
 
-        self.context.drawToContext(context: context)
+        self.context.drawToContext(context)
 
         subviews.forEach {
-            $0.flushContextToContext(context: self.context)
+            $0.flushContextToContext(self.context)
         }
     }
 
