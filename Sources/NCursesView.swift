@@ -72,7 +72,7 @@ public class NCursesView: NSObject {
         super.init()
     }
 
-    public func drawInContext(context: NCursesGraphicsContext) {
+    public func drawInContext(_ context: NCursesGraphicsContext) {
         subviews.forEach {
             $0.drawContext()
         }
