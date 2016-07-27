@@ -134,7 +134,7 @@ public class NCursesGraphicsContext: NSObject {
         wrefresh(ncursesWindow)
     }
 
-    func drawToContext(context: NCursesGraphicsContext) {
+    func drawToContext(_ context: NCursesGraphicsContext) {
 
         guard NRectIntersectsRect(frame, context.frame) else {
             return
