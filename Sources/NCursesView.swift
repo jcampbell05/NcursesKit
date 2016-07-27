@@ -105,13 +105,13 @@ public class NCursesView: NSObject {
         }
     }
 
-    public func addSubview(view: NCursesView) {
+    public func addSubview(_ view: NCursesView) {
         view.superview = self
         subviews.append(view)
         needsDisplay()
     }
 
-    public func removeSubview(view: NCursesView) {
+    public func removeSubview(_ view: NCursesView) {
         subviews = subviews.filter {
             $0 != view
         }

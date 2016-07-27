@@ -9,7 +9,7 @@
 import Foundation
 
 public class NCursesLayoutAnchor {
-    
+
     enum Strategy {
         case Left
         case Top
@@ -18,16 +18,16 @@ public class NCursesLayoutAnchor {
         case Width
         case Height
     }
-    
+
     let view: NCursesView
     let strategy: Strategy
-    
+
     var includeBorderInCalculations = false
-    
+
     private var value: Int32 {
-        
+
         let padding = (includeBorderInCalculations) ? 1 : 0
-        
+
         switch strategy {
         case .Left:
             return view.frame.origin.x + padding
@@ -43,16 +43,16 @@ public class NCursesLayoutAnchor {
             return view.frame.size.height - (padding * 2)
         }
     }
-    
+
     init(view: NCursesView, strategy: Strategy) {
         self.view = view
         self.strategy = strategy
     }
-    
-    public func constraintEqualToAnchor(anchor: NCursesLayoutAnchor, constant c: Int32 = 0) {
-        
+
+    public func constraintEqualToAnchor(_ anchor: NCursesLayoutAnchor, constant c: Int32 = 0) {
+
         let value = anchor.value + c
-        
+
         switch strategy {
         case .Left:
             view.frame.origin.x = value
@@ -74,8 +74,8 @@ public class NCursesLayoutAnchor {
             return
         }
     }
-    
-    public func constraintEqualToConstant(c: Int32) {
+
+    public func constraintEqualToConstant(_ c: Int32) {
         switch strategy {
         case .Left:
             view.frame.origin.x = c
