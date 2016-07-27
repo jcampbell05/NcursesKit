@@ -27,7 +27,7 @@ public class NCursesWindow: NCursesView {
 
         self.frame = frame
 
-        RunLoop.main().addTimer(keyPressTimer, forMode: RunLoopMode.commonModes)
+        RunLoop.main().add(keyPressTimer, forMode: RunLoopMode.commonModes)
     }
 
     override public func needsDisplay() {
