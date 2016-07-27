@@ -87,7 +87,7 @@ public enum NCursesColor: Int32, Equatable {
                 return (colorA, colorB)
             }
         }
-        .reduce([], combine: +)
+        .reduce([], +)
     }()
 }
 

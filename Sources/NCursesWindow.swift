@@ -12,7 +12,7 @@ import CNCURSES
 public class NCursesWindow: NCursesView {
 
     private lazy var keyPressTimer: Timer = {
-        return Timer.scheduledTimer(0.02, repeats: true) { _ in
+        return Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { _ in
           self.keyPressTimerDidFire()
         }
     }()
