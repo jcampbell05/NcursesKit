@@ -118,7 +118,7 @@ public class NCursesView: NSObject {
     }
 
     public func removeFromSuperview() {
-        superview?.removeSubview(view: self)
+        superview?.removeSubview(self)
     }
 
     public func didPressKeyForCharacter(character: Character) {
