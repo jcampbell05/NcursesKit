@@ -11,8 +11,8 @@ import CNCURSES
 
 public class NCursesWindow: NCursesView {
 
-    private lazy var keyPressTimer: NSTimer = {
-        return NSTimer.scheduledTimer(0.02, repeats: true) { _ in
+    private lazy var keyPressTimer: Timer = {
+        return Timer.scheduledTimer(0.02, repeats: true) { _ in
           self.keyPressTimerDidFire()
         }
     }()
@@ -27,7 +27,7 @@ public class NCursesWindow: NCursesView {
 
         self.frame = frame
 
-        NSRunLoop.mainRunLoop().addTimer(keyPressTimer, forMode: NSRunLoopCommonModes)
+        RunLoop.mainRunLoop().addTimer(keyPressTimer, forMode: RunLoopCommonModes)
     }
 
     override public func needsDisplay() {
